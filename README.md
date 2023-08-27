@@ -20,7 +20,8 @@ The fundamental feature of the smart waiter service robot is built around its ca
   <img src="https://i.imgur.com/Xhxorf3.jpg" alt="Aruco Marker Detection">
 </p>
 
-To enhance the user experience and speed the ordering process, the project comprises the construction of a graphical user interface (GUI) map. This map allows customers to build a visual depiction of the restaurant layout, aiding easy table selection and navigation for the robot. Additionally, clients have the option to place their purchases using a specialized mobile app or website, eliminating the need for human order-taking and minimizing waiting times.
+To enhance the user experience and streamline the ordering process, the project includes the development of a graphical user interface (GUI) map. This map empowers chefs and cashiers to create a visual representation of the restaurant layout, facilitating efficient table selection and navigation for the robot. The GUI enables the staff to designate specific tables for service and optimize the robot's route, ensuring accurate meal deliveries and minimizing delays.
+
 
 <p align="center">
   <img src="https://i.imgur.com/Ygb7sot.jpg" alt="GUI Map 1">
@@ -30,10 +31,26 @@ To enhance the user experience and speed the ordering process, the project compr
 To simplify remote control and monitoring, the project combines VNC viewer capability, enabling users to manage the robot using their mobile devices, PCs, or TVs. This function enables flexibility and ease in managing the robot's motions and activities from a distance.
 
 The Restaurant Serving System (RSS), driven by the smart waiter service robot, promises to enhance the quality of service in restaurants by eliminating human mistakes, decreasing operating expenses, and boosting overall customer happiness. By automating the serving process, restaurants may boost production, optimize resource allocation, and create a seamless eating experience.
+One of the remarkable features of the RSS is its compatibility with an online ordering platform. Customers can conveniently access the restaurant's website, select their desired menu items, and specify their table of choice. This capability empowers patrons to customize their dining experience, ensuring that their orders are accurately prepared and delivered to their designated tables. The integration of this online ordering mechanism minimizes waiting times and enhances overall customer convenience.
 
 <p align="center">
   <img src="https://i.imgur.com/YW8eRAA.jpg" alt="Online Meal Order">
 </p>
+
+## How the System Works
+The operational mechanism of the Restaurant Serving System (RSS) is designed to seamlessly blend modern technologies with the art of culinary service, ensuring efficient and precise meal deliveries. When a chef or kitchen staff member places prepared dishes onto the smart waiter service robot, they can utilize the graphical user interface (GUI) to designate the desired table for delivery within the restaurant.
+
+## ArUco Marker-Based Navigation
+Once the robot receives its mission, it taps into its array of advanced hardware components and software algorithms to execute the task. The key component in the navigation process is the use of ArUco markers strategically placed throughout the restaurant. These markers serve as navigation waypoints, allowing the robot to accurately determine its location and follow predefined pathways.As the robot navigates the restaurant environment, its onboard camera captures visual information of the ArUco markers. This information is then processed using computer vision techniques, enabling the robot to accurately identify and localize itself within the restaurant's layout. The robot's path planning algorithm relies on this marker-based navigation to efficiently reach the designated table.
+
+## Handling Obstacles and Dynamic Path Planning
+Should an obstacle be detected along the robot's path, its obstacle detection system comes into play. Utilizing ultrasonic sensors, the robot measures distances and identifies impediments. Upon detecting an obstacle, the robot emits a brief buzzer sound to alert nearby individuals. Simultaneously, the robot halts its movement, giving time for the obstacle to be addressed. Once the obstacle is cleared, the robot proceeds along its path, continuing its mission without disruption.
+
+## Adaptive Navigation Strategy
+However, if the obstacle remains in place and impedes the robot's intended route, the robot employs a sophisticated strategy. It rotates around its axis, using its sensors to assess alternative paths and navigate around the obstacle. If the robot identifies an unobstructed route, it will resume its course and proceed towards the designated table. In the event that no clear path is found, the robot reverses its direction and returns to its initial position, prompting the need for a new path designation.
+
+## Intuitive Interaction with Staff and Patrons
+Throughout this process, the robot's interactions are designed to be user-friendly and non-intrusive. Should the robot need to alter its path or seek assistance, it can gently turn around and display a visual cue indicating that it requires a new path designation. This intuitive interaction ensures that restaurant staff and patrons can easily engage with the robot, enhancing the overall dining experience.
 
 In short, the smart waiter service robot project integrates hardware components, computer vision algorithms, GUI mapping, and autonomous operation to produce a dependable and efficient solution for restaurant service. The integration of innovative technology and user-friendly interfaces opens the way for increased customer experiences and improved productivity in the restaurant business.
 
